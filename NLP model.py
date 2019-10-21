@@ -31,7 +31,7 @@ def wishme():
 
 #A function to convert video data to audio file named "testaudio.wav"
 def video2audio():
-    clip = mp.VideoFileClip("testvideo.mp4").subclip(800,900)
+    clip = mp.VideoFileClip("testvideo.mp4") #subclip(800,900)
     clip.audio.write_audiofile("testaudio.wav")
 
 #A function to read audio data from "testaudio.wav" to text file
